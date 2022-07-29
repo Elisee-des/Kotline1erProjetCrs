@@ -2,24 +2,18 @@ import java.util.*
 
 fun main() {
 
-   // print("Entrer votre  nom: ")
-    //var nom = readLine()
+   val tab = arrayOf(12, 23, 30, -2, 34, 10, -9)
 
-    //print("Entrer votre  age: ")
-    //var age = readLine()?.toInt()
+    var min = tab[0]
+    for (item in tab)
+    {
+        if (item < min)
+        {
+            min = item
+        }
+    }
 
-    //println("votre nom est :$nom")
-    //println("votre ager est :$age")
-
-    var console = Scanner(System.`in`)
-    print("Entrer votre  nom: ")
-    var nom = console.nextLine()
-
-    print("Entrer votre  age: ")
-    var age = console.nextInt()
-
-    println("votre nom est :$nom")
-    println("votre ager est :$age")
+    println(min)
 }
 
 
