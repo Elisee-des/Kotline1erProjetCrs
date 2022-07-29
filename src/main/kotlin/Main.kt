@@ -1,15 +1,25 @@
+import java.util.*
+
 fun main() {
-    var tab = intArrayOf(29,29,10,20)
-    var tab1 = Array(10){0}
-    var tab2 = arrayOf<String>("un", "deux", "trois")
 
-    for((index, num) in tab.withIndex())
-    {
-        println("index=$index et num=$num")
-    }
+   // print("Entrer votre  nom: ")
+    //var nom = readLine()
 
-    tab[2] = 20
-    print(tab[2])
+    //print("Entrer votre  age: ")
+    //var age = readLine()?.toInt()
+
+    //println("votre nom est :$nom")
+    //println("votre ager est :$age")
+
+    var console = Scanner(System.`in`)
+    print("Entrer votre  nom: ")
+    var nom = console.nextLine()
+
+    print("Entrer votre  age: ")
+    var age = console.nextInt()
+
+    println("votre nom est :$nom")
+    println("votre ager est :$age")
 }
 
 
