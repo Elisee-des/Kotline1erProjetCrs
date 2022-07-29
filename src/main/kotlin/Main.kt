@@ -1,20 +1,12 @@
 fun main() {
-    aficheBienvenu("Mr Sabidani")
-    val resultSomme = somme(20, 12)
-    println("le resultat de la somme est $resultSomme")
-    println("le resultat de la multiplication est ${multiplication(10, 20)}")
+    aficheBienvenu(num2 = 30, num1 = 23, age = 30)
+    var somme = {num1: Int, num2: Int -> num1 + num2}
+    println("La somme est ${somme(10, 30)}")
 }
 
-fun  aficheBienvenu(nom: String)
+fun  aficheBienvenu(num1: Int, num2: Int, age: Int)
 {
-    println("Bienvenu $nom")
+    println("le deuxiemme nombre est: $num1 et le premier est $num2 $age ans")
+
 }
 
-fun somme(num1: Int, num2: Int): Int
-{
-    val somme = num1 + num2
-
-    return somme
-}
-
-fun multiplication(num1: Int, num2: Int) = num1 * num2
