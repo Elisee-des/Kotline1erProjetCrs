@@ -1,16 +1,18 @@
 fun main() {
-    val moyenne = 20
+    val nombres = arrayOf("un", "deux", "trois", "quatre")
 
-    var result = if (moyenne > 9)
-    {
-         "Admis"
-    }else if (moyenne == 9)
-    {
-         "Rachat"
-    }
-    else {
-        "Echec"
-    }
+    //for (index in nombres.indices)
+    //{
+      //  println("item a l'indice $index = ${nombres[index]}")
+    //}
 
-    println("Le resultat est : $result")
+    //for ((index, value) in nombres.withIndex())
+    //{
+      //  println("item a l'indice $index = $value")
+    //}
+
+    for (index in 0..nombres.lastIndex)
+    {
+        println("item a l'indice $index = ${nombres[index]}")
+    }
 }
