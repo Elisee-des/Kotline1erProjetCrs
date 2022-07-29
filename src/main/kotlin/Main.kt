@@ -1,12 +1,15 @@
 fun main() {
-    aficheBienvenu(num2 = 30, num1 = 23, age = 30)
-    var somme = {num1: Int, num2: Int -> num1 + num2}
-    println("La somme est ${somme(10, 30)}")
+    var tab = intArrayOf(29,29,10,20)
+    var tab1 = Array(10){0}
+    var tab2 = arrayOf<String>("un", "deux", "trois")
+
+    for((index, num) in tab.withIndex())
+    {
+        println("index=$index et num=$num")
+    }
+
+    tab[2] = 20
+    print(tab[2])
 }
 
-fun  aficheBienvenu(num1: Int, num2: Int, age: Int)
-{
-    println("le deuxiemme nombre est: $num1 et le premier est $num2 $age ans")
-
-}
 
